@@ -2,35 +2,51 @@ public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        String[] O = {
-                " ***** ",
-                "*     *",
-                "*     *",
-                "*     *",
-                " ***** "
-        };
+        String[] lines = {
 
-        String[] P = {
+            // Row 1
+            String.join("   ",
                 " ***** ",
+                " ***** ",
+                " ***** ",
+                " ***** "
+            ),
+
+            // Row 2
+            String.join("   ",
                 "*     *",
-                " ***** ",
-                "*      ",
+                "*     *",
+                "*     *",
                 "*      "
-        };
+            ),
 
-        String[] S = {
+            // Row 3
+            String.join("   ",
+                "*     *",
+                "*     *",
+                " ***** ",
+                " ***** "
+            ),
+
+            // Row 4
+            String.join("   ",
+                "*     *",
+                "*     *",
+                "*      ",
+                "     * "
+            ),
+
+            // Row 5
+            String.join("   ",
+                " ***** ",
                 " ***** ",
                 "*      ",
-                " ***** ",
-                "      *",
                 " ***** "
+            )
         };
 
-        String space = "   ";  // space between letters
-
-        // Print row by row
-        for (int i = 0; i < O.length; i++) {
-            System.out.println(O[i] + space + O[i] + space + P[i] + space + S[i]);
+        for (String line : lines) {
+            System.out.println(line);
         }
     }
 }
