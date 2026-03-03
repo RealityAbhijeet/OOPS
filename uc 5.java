@@ -2,55 +2,35 @@ public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Inline declaration and initialization of banner lines
-        String[] lines = {
-            String.join("   ",
-                " *** ",
-                " *** ",
-                " *****",
-                " *****"
-            ),
-            String.join("   ",
-                "*   *",
-                "*   *",
-                "*    ",
-                "*    "
-            ),
-            String.join("   ",
-                "*   *",
-                "*   *",
-                " *****",
-                " *****"
-            ),
-            String.join("   ",
-                "*   *",
-                "*   *",
-                "     *",
-                "     *"
-            ),
-            String.join("   ",
-                "*   *",
-                "*   *",
-                "*   *",
-                "*   *"
-            ),
-            String.join("   ",
-                "*   *",
-                "*   *",
-                "*   *",
-                "*   *"
-            ),
-            String.join("   ",
-                " *** ",
-                " *** ",
-                " *****",
-                " *****"
-            )
+        String[] O = {
+                " ***** ",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
         };
 
-        // Enhanced for-loop to print banner
-        for (String line : lines) {
-            System.out.println(line);
+        String[] P = {
+                " ***** ",
+                "*     *",
+                " ***** ",
+                "*      ",
+                "*      "
+        };
+
+        String[] S = {
+                " ***** ",
+                "*      ",
+                " ***** ",
+                "      *",
+                " ***** "
+        };
+
+        String space = "   ";  // space between letters
+
+        // Print row by row
+        for (int i = 0; i < O.length; i++) {
+            System.out.println(O[i] + space + O[i] + space + P[i] + space + S[i]);
         }
     }
 }
